@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Empleados</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Mantenedor de empleados</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="rut">Rut</label>
+                        <input type="text" name="rut" id="idRut">
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="idNombre">
+                    </div>
+                    <div>
+                        <label for="departamento">Departamento</label>
+
+                        <select name="departamento" id="idDepartamento">
+                          <option value="Informatica">Informatica</option>
+                          <option value="Administracion" selected>Administracion</option>
+                          <option value="Ventas">Ventas</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <label for="sueldo">Sueldo</label>
+                        <input type="number" name="sueldo" id="idSueldo">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Agregar">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Rut</th>
+                                <th>Nombre</th>
+                                <th>Departamento</th>
+                                <th>Sueldo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <footer>Creado por Cristian Padilla</footer>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
